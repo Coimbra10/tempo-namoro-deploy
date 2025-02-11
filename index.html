@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Love Timer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Nosso Amor</h1>
-    <div class="content-wrapper">
-      <div class="image-display">
-        <img id="photo" src="images/Foto1.jpg" alt="Imagem romântica">
-      </div>
-      <div id="tempo">
-        <p id="years"></p>
-        <p id="weeks"></p>
-        <p id="days"></p>
-        <p id="hours"></p>
-        <p id="minutes"></p>
-        <p id="seconds"></p>
-      </div>
+    <div class="container">
+        <h1>Nosso Amor</h1>
+        
+        <div class="image-display">
+            <img id="imagem" src="images/Foto1.jpg" alt="Foto de nós dois">
+        </div>
+
+        <div id="tempo"></div>
+
+        <div class="button-container">
+            <button class="nav-button" onclick="anterior()">◀</button>
+            <button class="nav-button" onclick="proximo()">▶</button>
+        </div>
     </div>
-    <div class="button-container">
-      <button class="nav-button" id="prevButton">⬅️ Anterior</button>
-      <button class="nav-button" id="nextButton">Próxima ➡️</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
