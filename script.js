@@ -16,7 +16,7 @@ function proximo() {
 }
 
 // Tempo juntos
-const dataInicial = new Date("2024-02-14T00:00:00"); 
+const dataInicial = new Date("2024-02-14T22:00:00"); 
 
 function atualizarTempo() {
     const agora = new Date();
