@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #a8d08d, #69b678);  /* Fade verde */
     color: #333;
@@ -13,9 +13,9 @@
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .container {
+}
+
+.container {
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
     padding: 40px;
@@ -23,31 +23,33 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     max-width: 800px;
     width: 90%;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 3em;
     color: #06970e;
-  }
-  
-  .image-display {
+    margin-bottom: 20px;
+}
+
+.image-display {
     width: 60%;
     margin: auto;
-  }
-  
-  .image-display img {
-    width: 300px;
+}
+
+.image-display img {
+    width: 100%;
+    max-width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  #tempo {
+}
+
+#tempo {
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
@@ -59,15 +61,16 @@
     width: 60%;
     text-align: center;
     margin: auto;
-  }
-  
-  .button-container {
+}
+
+.button-container {
     display: flex;
     justify-content: center;
     gap: 10px;
-  }
-  
-  .nav-button {
+    margin-top: 20px;
+}
+
+.nav-button {
     background-color: #004b0a;
     color: white;
     padding: 10px 20px;
@@ -75,38 +78,59 @@
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .nav-button:hover {
+}
+
+.nav-button:hover {
     background-color: #004d40;
     transform: translateY(-3px);
-  }
-  
-  /* Responsivo para mobile */
-  @media (max-width: 768px) {
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
     .container {
-      width: 95%;
-      height: auto;
-      padding: 20px;
+        width: 95%;
+        padding: 20px;
     }
-  
+
     .image-display {
-      width: 90%;
+        width: 80%;
     }
-  
+
     #tempo {
-      width: 90%;
+        width: 80%;
     }
-  
+
     .button-container {
-      flex-direction: row;
-      gap: 5px;
+        flex-direction: row;
+        gap: 10px;
     }
-  
+
     .nav-button {
-      width: 40px;
-      height: 40px;
-      font-size: 1.2em;
+        width: 45px;
+        height: 45px;
+        font-size: 1.2em;
     }
-  }
-  
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .image-display img {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    #tempo {
+        font-size: 1.2em;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .nav-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1em;
+    }
+}
